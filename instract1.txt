@@ -1,0 +1,17 @@
+1/docker build . //creation d'une image
+2/
+*docker run -p 3000:80 fb5080dad822 //creation d'un container (Node)
+* docker run -p Nom de l'image (ou id)  //                                        (python)
+*docker ps //autre bash
+*docker stop 388df18dc4fa //stop containers a l'aide d'une autre terminal
+3/
+*docker run -p 3002:80 --name c-node nom de l'image       //containers(run)+name  (NODE)
+*docker run -p --name c-py  nom de l'image       //containers(run)+name(PYTHON)
+4/
+docker container prune // docker image prune
+5/
+docker build -t node . / docker build -t python .
+6/
+* docker run -p 3000:80 --rm --name node-test node
+*autre bash: docker stop node-test
+*docker ps //containers efface
